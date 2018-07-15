@@ -11,15 +11,15 @@ You will need to install
 
 2. create virtualenv:
 
-    `mkvirtualenv shortlist`
+    `$ mkvirtualenv shortlist`
 
 3. Activate virtualenv:
 
-    `workon shortlist`
+    `$ workon shortlist`
 
 4. Install requirements:
 
-    `pip install -r requirements.txt`
+    `$ pip install -r requirements.txt`
 
 
 # How to run the script

@@ -2,6 +2,10 @@ import argparse
 
 
 def transform_address_details(details):
+    """
+    Transforms the data passed by transforming the name into lowercase
+    and the phone number into an integer
+    """
     if type(details) is not list:
         raise TypeError('Details need to be a valid list')
     details[0] = details[0].lower()
@@ -10,6 +14,10 @@ def transform_address_details(details):
 
 
 def get_address_queries_from_file(file_path):
+    """
+    Reads content from a file and extracts the addresses from the queries
+    returns a tuple containg a list of addressess and queries
+    """
     addresses = []
     queries = []
     try:
@@ -34,6 +42,9 @@ def get_address_queries_from_file(file_path):
 
 
 def execute_queries(addresses, query):
+    """
+    executes the queries and finds the matching entries
+    """
     addresses_length = len(addresses)
 
     for name in query:
